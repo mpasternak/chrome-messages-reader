@@ -1,0 +1,23 @@
+[project]
+name = "chrome-messages-reader"
+version = "0.1.0"
+description = "Scrape SMS messages from Google Messages for Web using Chrome's profile and Playwright"
+requires-python = ">=3.10"
+license = "MIT"
+readme = "README.md"
+dependencies = [
+    "playwright>=1.40",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8.0"]
+
+[project.scripts]
+chrome-messages-reader = "chrome_messages_reader.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/chrome_messages_reader"]
