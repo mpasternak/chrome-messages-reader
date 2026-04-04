@@ -4,6 +4,8 @@
 [![Python 3.12+](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
+> **Experimental software — use at your own risk.** While the tool runs a second Chrome instance from a cloned profile, incoming SMS messages may be delivered to the temporary copy instead of your real Chrome session and **could be lost**. Do not use this tool if you cannot afford to miss messages.
+
 Read SMS messages from [Google Messages for Web](https://messages.google.com/web/) by scraping Chrome's local session data with [Playwright](https://playwright.dev/).
 
 Currently extracts **PZePUAP** (Polish government e-signature platform) authorization and document-signing codes. The parser module can be extended to handle other message formats.
